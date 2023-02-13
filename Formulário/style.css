@@ -28,8 +28,6 @@ body {
     height: 600px;
     background: rgb(1,0,22);
     background: linear-gradient(318deg, rgba(1,0,22,1) 0%, rgba(24,29,47,1) 100%); /* atenção: utilizar o seguinte site para gradiente de cor https://cssgradient.io/ */
-
-
     margin: 0px;
     padding: 30px;
 }
@@ -74,8 +72,10 @@ textarea {
     resize: none; /*não deixa alterar o tamanho da caixa*/
 }
 textarea::placeholder {
-    color: white;
+    color:  rgb(134, 133, 133);
     font-size:15px;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 15px;
 }
 
 /* Atenção: O :: é usado para modificar o seletor placeholder*/
