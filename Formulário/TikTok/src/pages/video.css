@@ -1,0 +1,12 @@
+.video{
+background-color: red;
+height: 100%;
+width: 100%;
+scroll-snap-align: start;/*indicar o componente que indica o scrool*/
+position:relative;
+}
+.video_player{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;/*serve para configurar a estetica do controls*/
+}
