@@ -1,0 +1,51 @@
+.videoFooter {
+  position: relative;
+  bottom: 25%;
+  color: white;
+  margin-left: 30px;
+}
+.videoFooter_texto > h2 {
+  padding-bottom: 15px;
+}
+
+.videoFooter_texto > p {
+  padding-bottom: 15px;
+}
+.videoFooter_music {
+  display: flex;
+}
+.videoFooterMusic_text{
+  width: 80%;
+  overflow-x:hidden;/*Serve para mostrar o nome da musica andando apenas dentro da div e ocultar fora*/
+}
+.videoFooterMusic_text>p{
+  animation: moveTheText  4s infinite linear;
+  }
+
+.videoFooter_record {
+  animation: spinTheRecord 3s infinite linear;
+  position: absolute;
+  bottom: -10px;
+  right: 20px;
+  height: 50px;
+  filter: invert(1); /*comando para mudar a cor do disco*/
+}
+@keyframes spinTheRecord {
+  /*esse comando faz a animação do disco*/
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveTheText {
+    /*esse comando a movimentação do titulo da música*/
+    0% {
+        transform:translateX(100%)
+    }
+    100% {
+        transform:translateX(-100%)
+    }
+  }

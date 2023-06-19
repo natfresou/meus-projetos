@@ -1,7 +1,9 @@
 import React, { useRef, useState } from "react";
 import "./video.css";
+import VideoFooter from "../components/footer/videoFooter";
 
 export function Video() {
+
   const videoRef =
     useRef(null); /* O useRef vai servir para referenciar o video*/
   const [play, setPlay] =
@@ -30,6 +32,7 @@ export function Video() {
           loop /*serve para reiniciar o video quando ele acabar*/
           src="https://v3.cdnpk.net/videvo_files/video/premium/partners0133/large_watermarked/BB_f1db64fb-f7c8-4575-ae04-f675104330af_FPpreview.mp4"
         ></video>
+        <VideoFooter/>
       </div>
     </>
   );
