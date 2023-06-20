@@ -1,8 +1,9 @@
 import React, { useRef, useState } from "react";
 import "./video.css";
-import VideoFooter from "../components/footer/videoFooter";
+import VideoFooter from "../components/footer/index";
+import { VideoSidebar } from "../components/sidebar/index";
 
-export function Video() {
+export function Video({likes,messages,shares,name,description,music,url}) {
 
   const videoRef =
     useRef(null); /* O useRef vai servir para referenciar o video*/
@@ -30,9 +31,18 @@ export function Video() {
           onclick={handdleStart}
           controls /*serve para sinalizar o play do video, iniciar e dar pause*/
           loop /*serve para reiniciar o video quando ele acabar*/
-          src="https://v3.cdnpk.net/videvo_files/video/premium/partners0133/large_watermarked/BB_f1db64fb-f7c8-4575-ae04-f675104330af_FPpreview.mp4"
+          src={url}
         ></video>
-        <VideoFooter/>
+        < VideoSidebar
+        likes={likes}
+        messages={messages}
+        shares={shares}
+        />
+        <VideoFooter
+        name={name}
+        description={description}
+        music={music}
+        />
       </div>
     </>
   );
