@@ -49,3 +49,14 @@
         transform:translateX(-100%)
     }
   }
+
+  @media (max-width: 440px) {
+    .videoFooter{
+      bottom: 25%;
+    }
+
+    .videoFooterMusic_text{
+      width: 78%;
+    }
+  }
+  

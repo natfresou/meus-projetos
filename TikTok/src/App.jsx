@@ -1,32 +1,41 @@
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Video from "./pages/video";
+import db from "./config/firebase.js";
+import { collection, getDocs } from "firebase/firestore/lite";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [videos, setVideos] = useState([]);
+
+  async function getVideos() {
+    // função para pegar as informações no banco de dados
+    const videosCollection = collection(db, "videos");
+    const videosSnapshot = await getDocs(videosCollection);
+    const videosList = videosSnapshot.docs.map((doc) => doc.data());
+    setVideos(videosList);
+  }
+
+  useEffect(() => {
+    getVideos();
+  }, []);
 
   return (
     <>
       <div className="app">
         <div className="app_videos">
-          <Video
-            likes={100}
-            messages={200}
-            shares={300}
-            name="naty_dev"
-            description="Recife lindo de viver"
-            music="Frevo"
-            url="https://v3.cdnpk.net/videvo_files/video/premium/partners0133/large_watermarked/BB_f1db64fb-f7c8-4575-ae04-f675104330af_FPpreview.mp4"
-          />
-          <Video
-            likes={150}
-            messages={250}
-            shares={370}
-            name="naty_dev"
-            description="Gatinho"
-            music="Música feliz"
-            url="https://poqlymuephttfsljdabn.supabase.co/storage/v1/object/public/jornadadev/bird.mp4?t=2023-05-22T19%3A40%3A47.052Z"
-          />
+          {videos.map((item) => {
+            return (
+              <Video
+                likes={item.likes}
+                messages={item.messages}
+                shares={item.shares}
+                name={item.name}
+                description={item.description}
+                music={item.music}
+                url={item.url}
+              />
+            );
+          })}
         </div>
       </div>
     </>

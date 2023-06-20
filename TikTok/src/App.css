@@ -1,5 +1,5 @@
-html{
-  scroll-snap-type: y mandatory
+html {
+  scroll-snap-type: y mandatory;
 }
 * {
   margin: 0;
@@ -21,7 +21,7 @@ html{
   border-radius: 20px;
   overflow: scroll; /* serve para conter todos os itens filhos no pai*/
   scroll-snap-type: y mandatory; /* serve para assim que o usuario movimentar a tela no eixo y pular vara o video a frete ou atras.*/
-position: relative;
+  position: relative;
 }
 /* Esconde a scrollbar no chome,safari e opera */
 .app_videos::-webkit-scrollbar {
@@ -31,4 +31,11 @@ position: relative;
 .app_videos {
   -ms-overlow-style: none;
   scrollbar-width: none;
+}
+
+@media (max-width: 440px) {
+  .app_videos {
+    width: 100%;
+    height: 100vh;
+  }
 }
