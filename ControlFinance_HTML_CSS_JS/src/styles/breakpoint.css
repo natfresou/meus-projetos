@@ -1,0 +1,74 @@
+@media(min-width:1024px){
+    mean{
+   position: relative;
+    }
+}
+
+@media(min-width:1024px){
+    header{
+    flex-direction: row;
+    justify-content: space-around;
+    }
+    header>button{
+        width: 200px;
+        }
+}
+
+@media(min-width:1024px){
+    .financialSummary_containner--divBottons{
+    width:700px;
+    justify-content: flex-end;
+    }
+}
+
+@media(min-width:1024px){
+    .financialSummary_containner {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    }
+}
+
+@media(min-width:1024px){
+    .sumOfValues_containner{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(min-width:1024px){
+    .valuesRegiter_containner{
+        width: 100%;
+        display: flex;
+      justify-content: center;
+    }
+    .valuesRegiter_containner>ul{
+        width: 860px;
+    }
+    .modal_controller{
+        width: 400px;
+        position:absolute;
+        top:30%;
+        left:40%;
+    }
+
+    .modal_value>input{
+        width: 380px;
+    }
+
+    .modal_valueType{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    }
+    .modal_valueType>button{
+        width: 110px;
+        }
+    .modal_submity{
+        justify-content: flex-end;
+    }
+   
+}

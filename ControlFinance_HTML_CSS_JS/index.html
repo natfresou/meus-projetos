@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control Finance</title>
+    <link
+      rel="shortcut icon"
+      href="./src/assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Control Finance - Seu controle financeiro"
+    />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/breakpoint.css" />
+  </head>
+  <body>
+
+    <header>
+      <h1> Control<span>Finance</span></h1>
+      <button>Registrar novo valor</button> 
+    </header>
+
+    <main id="app">
+
+      <section class="financialSummary_containner">
+        <h2 class="financialSummary_containner--title">Resumo financeiro</h2>
+        <div class="financialSummary_containner--divBottons">
+          <button class="financialSummary_containner--bottons" id="financialSummary_containner--bottonTodos">Todos</button>
+          <button class="financialSummary_containner--bottons"  id="financialSummary_containner--bottonEntradas">Entradas</button>
+          <button class="financialSummary_containner--bottons"  id="financialSummary_containner--bottonSaidas">Saidas</button>
+        </div>
+      </section>
+
+      <section class="sumOfValues_containner">
+        <div class="sumOfValues_containner--div">
+          <h2 class="sumOfValues_containner--title">Soma dos valores</h2>
+          <p class="sumOfValues_containner--value">0</p>
+        </div>
+        
+      </section>
+
+      <section class="valuesRegiter_containner">
+
+        <div class="valuesRegiter_emptyValue">
+          <h3>Nenhum valor cadastrado</h3>
+          <p>Registrar novo valor</p>
+        </div>
+
+      </section>
+
+      <div class="valuesRegiter_emptyValue">
+        <div>
+          <h3>Nenhum valor cadastrado</h3>
+          <p>Registrar novo valor</p>
+        </div>
+
+      </div>
+
+    <dialog class="modal_controller">
+      <form>
+        <div class="modal_header">
+          <h2>Registro de valor</h2>
+          <p id="modal_close">X</p>
+        </div>
+        <p>Digite o valor e em seguida aperte no botão referente ao tipo do valor</p>
+         <div class="modal_value">
+          <h2>Valor</h2>
+          <input type="number" name="value" placeholder="R$ 0.00">
+        </div> 
+        <div class="modal_valueType">
+          <h2>Tipo de valor</h2>
+          <button class="modal_valueType--entrada">Entrada</button>
+          <button class="modal_valueType--saida">Saída</button>
+        </div>
+        <div class="modal_submity">
+          <button id="modal_submity--cancelar">Cancelar</button>
+          <button id="modal_submity--inserirValor">Inserir valor</button>
+        </div>
+      </form>
+    </dialog>
+    </main>
+    <script src="./src/scripts/valuesData.js"></script>
+    <script src="./src/scripts/modal.js"></script>
+    <script src="./src/scripts/index.js"></script>
+  </body>
+</html>
