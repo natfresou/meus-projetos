@@ -1,0 +1,58 @@
+@media(min-width:1350px){
+    .breakpoint_desktop{
+        padding: 1rem 2.5rem;
+        display: grid;
+        grid-template-columns: 850px 1fr;
+    }
+}
+
+@media(min-width:1350px){
+    .sugestFriends{
+        margin-top: 7rem;
+        padding: 1rem 1rem;
+        width: 420px;
+        height:350px;
+    }
+}
+
+@media(min-width:1350px){
+    .sugestFriend_div{
+        flex-direction: column;
+        height: 400px;
+        width: 420px;
+        gap: 30px;
+    }
+}
+
+@media(min-width:1350px){
+    #sugestbutton{
+        top: 10px;
+        right: 550px;
+}
+}
+
+
+@media(min-width:1350px){
+    .Posts{
+        padding: 1rem 4rem;
+}
+}
+
+@media(min-width:900px){
+    .sugestFriend_div{
+        width: 900px;
+}
+}
+
+@media(min-width:1350px){
+    #postTitle{
+     
+        font-weight: var(--title1-weight);
+        font-size: var(--title1-size);
+        line-height: var(--title1-height);
+       
+    }
+    .sugestFriends >h2{
+    font-size: 19px;
+    }
+}

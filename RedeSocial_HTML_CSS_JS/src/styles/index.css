@@ -1,0 +1,390 @@
+/* --- Header ---*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 2rem;
+    position: fixed;
+    width: 100vw;
+    height: 76px;
+    left: 0px;
+    top: 0px;
+    background: var(--color-gray1);
+    z-index: 1;
+}
+
+header > p {
+    color: white;
+}
+
+/* --- mean ---*/
+
+
+mean {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.breakpoint_desktop{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.newPost {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 96px;
+    height: 300px;
+    width: 100%;
+    padding: 2rem 2rem;
+    gap: 10px;
+}
+
+#headerDiv1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+    gap:10px;
+}
+
+#NewPost_User{
+    font-size:var(--title2-size);
+    font-weight: var(--title2-weight);
+    font-family: var(--font-family);
+    line-height: var(--title2-height);
+    font-style: normal;
+}
+
+#NewPost_stack{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--title2-weight);
+    font-size: var(--text3-size);
+    line-height: var(--text3-height);
+
+}
+
+#headerDiv2{
+    width: 100%;
+    max-width: 713px;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    gap:10px;
+}
+
+#newPost_Img{
+    height: 52px;
+    width: 52px;
+    border-radius: 10px;
+}
+
+#input_title{
+    width: 100%;
+    max-width: 713px;
+    height: 52px;
+    gap: 15px;
+    padding: 10px;
+    background: var(--whiteFixed);
+    border: 2px solid var(--color-gray4);
+    border-radius: 4px;
+}
+
+#input_text{
+    width: 100%;
+    max-width: 713px;
+    height: 130px;
+    box-sizing: border-box;
+    padding: 10px;
+    gap: 15px;
+    background: var(--whiteFixed);
+    border: 2px solid var(--color-gray4);
+    border-radius: 4px;
+}
+
+#input_button{
+    gap: 15px;
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--text123-weight);
+    font-size: var(--text2-size);
+    line-height: var(--text2-height);
+    color: var(--whiteFixed);
+    background-color: var(--color-brand1);
+    cursor: pointer;
+    color: var(--color-gray3);
+    background: var(--color-gray4);
+}
+#input_button:hover{
+    background-color: var(--color-brand1);
+    color: var(--whiteFixed);
+}
+
+.sugestFriends{
+    margin-top: 40px;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    height: 220px;
+    width: 100%;
+    max-width: 713px;
+    gap: 5px;
+    
+}
+.sugestFriends >h2{
+    margin-top: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 24px;
+    color: rgb(6, 6, 78);
+}
+
+.sugestFriend_div{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+   align-self: flex-start;
+    height: 85px;
+    width: 100%;
+    gap: 10px;
+    overflow-x: auto;
+    position: relative;
+}
+
+#sugestImg{
+    height: 52px;
+    width: 52px;
+    border-radius: 10px;
+}
+#sugestUser{
+   
+    font-size:var(--title2-size);
+    font-weight: var(--title2-weight);
+    font-family: var(--font-family);
+    line-height: var(--title2-height);
+    font-style: normal;
+    color: var(--color-gray1);
+}
+
+#sugestStack{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--title2-weight);
+    font-size: var(--text3-size);
+    line-height: var(--text3-height);
+}
+
+#sugestbutton{
+    width: 60px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--title2-weight);
+    font-size: var(--text3-size);
+    line-height: var(--text3-height);
+    color: var(--color-gray1);
+    background-color: var(--whiteFixed);
+    border:1px solid var(--color-gray1);
+    position: absolute;
+    top: 10px;
+    padding: 5px;
+    right: 10px;
+   cursor: pointer;
+
+}
+
+
+#sugest_div1{
+    min-width: 290px;
+    height:85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    gap:10px;
+    position:relative;
+}
+
+
+.Posts{
+   margin-top: 10px;
+   width: 100%;
+   padding-left: 2rem ;
+   padding-right: 2rem;
+   gap:10px;
+
+}
+
+.Posts >h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(6, 6, 78);
+}
+
+#postImg{
+    height: 52px;
+    width: 52px;
+    border-radius: 10px;
+}
+#post_li {
+    list-style-type: none;
+}
+
+#postUser{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--title2-weight);
+    font-size: var(--title2-size);
+    line-height: var(--title2-height);
+    color: var(--color-gray1);
+}
+    
+
+#postStack{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--title2-weight);
+    font-size: var(--text3-size);
+    line-height: var(--text3-height);
+}
+
+#postDiv1{
+    margin-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    position: relative;
+
+}
+
+#post_divHead{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+#postTitle{
+    max-width: 713px;
+    min-height: 80px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--title2-weight);
+    font-size: var(--title2-size);
+    line-height: var(--title2-height);
+    color: var(--color-gray1);
+}
+
+#postText{
+
+    margin-top: 20px;
+    max-width: 713px;
+    max-height: 56px;
+    overflow: hidden; /* propriedade para limitar o texto mostrado no input*/
+    text-overflow: ellipsis; 
+    text-align: justify;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--text123-weight);
+    font-size: var(--text1-size);
+    line-height: 1.75rem;
+    color:var(--color-gray20);
+}
+
+#post_divSection{
+    width: 100%;
+    max-width: 713px;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+#post_divFooter{
+    margin-top: 20px;
+    display: flex;
+    justify-content: row;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.buttonPostModal{
+    width: 75px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:var(--font-family);
+    font-style: normal;
+    font-weight: var(--text123-weight);
+    font-size:  var(--text2-size);
+    line-height: var(--text2-height);
+    color:var(--whiteFixed);
+    background-color: var(--color-gray1);
+    border:1px solid var(--color-gray1); 
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    }
+
+#postLikes{
+    position: absolute;
+    left: 200px;
+}
+#post_likesHead{
+    position: absolute;
+    left: 170px;
+    cursor: pointer;
+}
+
+#post_likesHead:hover{
+
+}
+
+#postTextModal{
+    margin-top: 20px;
+    max-width: 713px;
+    max-height: 220px;
+    text-align: justify;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: var(--text123-weight);
+    font-size: var(--text1-size);
+    line-height: 1.75rem;
+    color:var(--color-gray20);
+
+}
+
+#closeModal{
+    position:absolute;
+    top:0px;
+    right:20px;
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300&family=Source+Sans+Pro:wght@600&display=swap');
+
+:root {
+
+/* Brand Colors*/
+--color-brand1:#4263EB;
+--color-brand2:#364FC7;
+--color-gray0:#0A0C0D;
+--color-gray1:#212529;
+--color-gray2:#495057;
+--color-gray3: #868E96;
+--color-gray4:#DEE2E6;
+--color-gray5:#F8F9FA;
+--gray-opacity-1: rgba(33, 37, 41, 0.5);
+--color-font: #EDF2FF;
+--whiteFixed: #FFFFFF;
+
+/* Font Family*/
+--font-family: 'Inter', sans-serif;
+
+--title1-weight:700;
+--title1-size:1.75rem;
+--title1-height:2.5rem;
+
+--title2-weight:600;
+--title2-size:1.25rem;
+--title2-height:1.5rem;
+
+--text123-weight:400;
+
+--text1-size:1.0rem;
+--text1-height:1.75rem;
+
+--text2-size:0.875rem;
+--text2-height:1.0rem;
+
+--text3-size:0.75rem;
+--text3-height:1.0rem;
+
+--font-style:normal;
+
+}

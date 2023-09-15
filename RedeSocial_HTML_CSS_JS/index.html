@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/globalStyle.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/breakpoint.css" />
+
+
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./src/scripts/database.js" defer ></script>
+    <script src="./src/scripts/index.js" defer ></script>
+    
+
+    <title>Criando rede social</title>
+  </head>
+  <body>
+    <header>
+      <img src="./src/assets/img/TechPosters.svg">
+      <p>Sair</p>
+    </header>
+    <mean>
+      <section class="breakpoint_desktop">
+        <section class="newPost">
+            <div id="headerDiv1">
+            </div>
+            <div id="headerDiv2">
+              <input type="text"  id="input_title" placeholder="Digite título do post">
+              <input type="text" id="input_text" placeholder="Digite descrição do post">
+              <button id="input_button">Postar</button> 
+            </div>
+          </section>
+          <nav class="sugestFriends">
+            <h2> Sugestões para você seguir </h2>
+            <div class="sugestFriend_div">
+            </div>
+        </nav>
+      </section>
+      <section class="Posts">
+        <h2> Posts </h2>
+        <dialog class="container_controler">
+        </dialog>
+
+      </section>
+    </mean>
+   
+  </body>
+</html>
